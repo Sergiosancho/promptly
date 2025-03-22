@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "@motionone/dom";
 import { ReactNode } from "react";
 
 interface BoxRevealProps {

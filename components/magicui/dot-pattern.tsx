@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import React, { useEffect, useId, useRef, useState } from "react";
 
 /**
@@ -20,8 +20,7 @@ import React, { useEffect, useId, useRef, useState } from "react";
 interface DotPatternProps extends React.SVGProps<SVGSVGElement> {
   width?: number;
   height?: number;
-  x?: number;
-  y?: number;
+
   cx?: number;
   cy?: number;
   cr?: number;
@@ -63,8 +62,7 @@ interface DotPatternProps extends React.SVGProps<SVGSVGElement> {
 export function DotPattern({
   width = 16,
   height = 16,
-  x = 0,
-  y = 0,
+
   cx = 1,
   cy = 1,
   cr = 1,
